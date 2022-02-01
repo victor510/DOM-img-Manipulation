@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE MANIPULATION IN VANILLA JS</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap');
+</style>
+
+<body>
+
+    <div class="body_overlay">
+        <div class="image_container">
+            <img id="overlay_img" class="on_display" src="./img1.jpg" alt="">
+        </div>
+        <div class="image_details">
+            <h1 id="image_details__header">this is a normal image</h1>
+        </div>
+
+        <div class="close_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+              </svg>
+        </div>
+    </div>
+
+    <h1>This Is DOM Image Manipulation</h1>
+
+    <div class="wrapper">
+        <div class="container image_container container_1">
+            <div class="img_overlay">
+                <h2>Image One</h2>
+                <button onclick="repClick(this.id)" class="btn" id="btn__container_1">Learn More</button>
+            </div>
+            <img src="./img1.jpg" alt="an image">
+        </div>
+        
+        <div class="container image_container container_2">
+            <div class="img_overlay">
+                <h2>Image One</h2>
+                <button onclick="repClick(this.id)" class="btn" id="btn__container_2">Learn More</button>
+            </div>
+            <img src="./img2.jpg" alt="an image">
+        </div>
+    </div>
+    
+    <script src="./app.js"></script>
+    
+</body>
+
+
+
+</html>
